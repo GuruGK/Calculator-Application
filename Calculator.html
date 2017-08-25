@@ -1,0 +1,78 @@
+<style>
+input{
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        border:solid 1px black;
+        padding:5px;
+        margin: auto;
+}
+form{
+         border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #008CBA;
+    color: white;
+}
+</style>
+<form>
+      
+        <input type="number" placeholder="Number 1"  id="number1" name="number1"/> </br>
+       
+        <input type="number" placeholder="Number 2"  id="number2" name="number2"/> </br>
+        <select name="choice" id="choice">
+                <option value="Add" id="1">Addition</option>
+                <option value="Sub" id="2">Subtraction</option>
+                <option value="Mul" id="3">Multiplication</option>
+                <option value="Div" id="4">Division</option>
+</select> </br>
+        <button class="button" onclick="calculate()">calculate</button>
+        </form>
+<script>
+function calculate(){
+
+     var n1=document.getElementById('number1').value;
+     var n2=document.getElementById('number2').value;
+     var ch=document.getElementById('choice').value;
+     if(ch=="Add"){
+             var sum=parseInt(n1)+parseInt(n2);
+     alert(sum);
+     }
+     else if(ch=="Sub"){
+             var sum=parseInt(n1)-parseInt(n2);
+     alert(sum);
+     }
+     else if(ch=="Mul"){
+             var sum=parseInt(n1)*parseInt(n2);
+     alert(sum);
+     }
+     else
+     var sum=parseInt(n1)/parseInt(n2);
+     alert(sum);
+     
+}
+</script>
+
+
+
+
+
+
+        
+            
+           
